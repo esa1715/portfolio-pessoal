@@ -8,11 +8,11 @@ const Header = () => {
         <section className='header'>
             <div className='header__content'>
                 <img src="https://avatars.githubusercontent.com/u/189414987?v=4" alt="Foto de perfil" className='header__avatar'/>
-                <h1 className='header__tit'>Erik da Silva Alves</h1>
-                <h2 className='header__sub'>Desenvolvedor Front-end Júnior</h2>
-                <div className='header__cont'>
-                    <h2>Redes Sociais</h2>
-                    <div className='header__cont__icons'>
+                <h1 className='header__tit'>ERIK DA SILVA ALVES</h1>
+                <h2 className='header__sub'>DESENVOLVEDOR FRONT-END JÚNIOR</h2>
+                <div className='header__redes'>
+                    <h2>REDES SOCIAIS</h2>
+                    <div className='header__redes__icons'>
                         <ul>
                             <li>
                                 <a href='https://mail.google.com/mail/?view=cm&fs=1&to=silvalveserik1@gmail.com&su=Portfólio%20pessoal%20' target="_blank" rel="noreferrer">
