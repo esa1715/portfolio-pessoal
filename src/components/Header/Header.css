@@ -24,7 +24,6 @@ header {
 
 .header__avatar {
     width: 33%;
-    height: 33%;
     border-radius: 50%;
     padding: 1.25% 0;
     cursor: pointer;
@@ -32,42 +31,31 @@ header {
 
 .header__tit, .header__sub, .header__redes h2 {
     color: #fff378;
+    text-align: center;
+    padding: 1.25% 0;
 }
 
 .header__tit {
     font-size: 32px;
-    padding: 1.25% 0;
 }
 
-.header__sub{
+.header__sub, .header__redes h2 {
     font-size: 24px;
-    padding: 1.25% 0;
+}
+
+.header__redes, .header__redes__icons, .header__redes__icons ul {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
 }
 
 .header__redes {
-    width: 100%;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-.header__redes h2 {
-    font-size: 24px;
-    padding: 1.25% 0;
-}
-
-.header__redes__icons{
-    display: flex;
-    width: 100%;
-    justify-content: center;
 }
 
 .header__redes__icons ul{
-    display: flex;
-    width: 60%;
-    height: auto;
     justify-content: space-around;
-    align-items: center;
     cursor: pointer;
 }
 
@@ -89,70 +77,52 @@ header {
         max-width: 90%;
     }
 
-    .header__avatar {
-        width: 25%;
+    .header__avatar, .header__tit, .header__sub, .header__redes h2, .header__redes__icons li {
         padding: 2.5% 0;
+    }
+
+    .header__avatar {
+        width: 20%;
     }
 
     .header__tit {
         font-size: 24px;
-        padding: 2.5% 0;
     }
 
     .header__sub, .header__redes h2{
-        font-size: 16px;
-        padding: 2.5% 0;
-    }
-
-    .header__redes__icons {
-        padding: 0;
+        font-size: 20px;
     }
 
     .header__redes__icons ul {
-        display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        width: 60%;
-        padding: 0;
     }
-    
-    .header__redes__icons li {
-        flex: 0 1 calc(50% - 10px);
-        text-align: center;
+
+    .header__redes__icons ul li {
         padding: 2.5% 0;
     }
 }
 
-@media screen and (max-width: 163px) {
-    .header__avatar {
+@media screen and (max-width: 225px) {
+    .header__avatar, .header__tit, .header__sub, .header__redes h2, .header__redes__icons ul li {
         padding: 5% 0;
-    }
-    
+        text-wrap: wrap;
+    }  
+
+
     .header__tit {
-        font-size: 16px;
-        padding: 5% 0;
-        text-align: center;
+        font-size: 16px; 
     }
 
     .header__sub, .header__redes h2{
         font-size: 14px;
-        text-wrap: wrap;
-        text-align: center;
-        padding: 5% 0;
-    }
-
-    .header__redes__icons {
-        padding: 0;
     }
 
     .header__redes__icons ul{
         flex-direction: column;
-        font-size: smaller;
-        padding: 0;
+        font-size: small;
     }
 
     .header__redes__icons ul li {
-        padding: 5% 0;
         flex: 0 1 calc(25% - 10px);
     }
 }
