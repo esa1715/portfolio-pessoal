@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+.techtools {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: #04080d;
+    align-items: center;
+    padding: 2.5% 0;
+}
+
+.techtools__content {
+    display: flex;
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.techTools__tit {
+    color: #ffed7e;
+    font-size: 24px;
+    padding: 1.5% 0;
+    text-align: center;
+}
+
+.techtools__icons {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1.5% 0;
+}
+
+.icon__content {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+}
+
+.icon__content:hover {
+    transform: scale(1.25);;
+}
+
+.icon__content img {
+    width: 64px;
+}
+
+.icon__content span {
+    font-size: 16px;
+    color: rgb(255, 255, 255, 0.25);
+}
+
+@media screen and (max-width: 450px) {
+    .techtools {
+        padding: 5% 0;
+    }
+ 
+    .techTools__tit {
+        font-size: 16px;
+    }
+
+    .icon__content {
+        flex: 0 1 calc(50% - 10px);
+        margin: 1%;
+    }
+}
+
+
+@media screen and (max-width: 163px) {
+    .techTools__tit {
+        font-size: 14px;
+        padding: 5% 0;
+    }
+    
+    .techtools__icons {
+        padding: 5% 0
+    }
+
+    .icon__content {
+        flex: 0 1 calc(100% - 10px);
+        padding: 5% 0;
+    }
+
+    .icon__content img {
+        width: 32px;
+    }
+
+    .icon__content span {
+        font-size: 12px;
+    }
+}

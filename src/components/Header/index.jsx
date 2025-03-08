@@ -5,7 +5,7 @@ import { faGithub, faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-svg
 
 const Header = () => {
     return (
-        <section className='header'>
+        <header>
             <div className='header__content'>
                 <img src="https://avatars.githubusercontent.com/u/189414987?v=4" alt="Foto de perfil" className='header__avatar'/>
                 <h1 className='header__tit'>ERIK DA SILVA ALVES</h1>
@@ -38,7 +38,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </header>
     )
 }
 

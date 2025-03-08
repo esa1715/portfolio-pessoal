@@ -1,8 +1,14 @@
 import Resumo from '../Resumo'
+import TechTools from '../TechTools'
+import './Main.css'
+
 
 function Main() {
   return (
-      <Resumo />
+      <main>
+        <Resumo />
+        <TechTools />
+      </main>
   )
 }
 

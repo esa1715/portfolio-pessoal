@@ -16,20 +16,21 @@
 
 .resumo__content {
     display: flex;
-    width: 80%;
+    width: 90%;
     height: auto;
     flex-direction: column;
     align-items: center;
 }
 
 .resumo__tit {
-    color: #ffed7e;
+    color: #fff378;
     font-size: 24px;
     padding: 1.5% 0;
+    text-align: center;
 }
 
 .resumo__content p {
-    color: #ffed7e;
+    color: #fff378;
     font-size: 16px;
     text-align: center;
 }
@@ -39,11 +40,39 @@
 }
 
 @media screen and (max-width: 450px) {
+    .resumo {
+        padding: 5% 0;
+    }
+
+    .resumo__content {
+        width: 90%;
+    }
+
     .resumo__tit {
         font-size: 16px;
     }
 
     .resumo p {
         font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 163px) {
+    .resumo {
+        padding: 5% 0;
+    }
+
+    .resumo__tit {
+        font-size: 14px;
+        padding: 5% 0;
+        text-align: center;
+    }
+    .resumo__content {
+        padding: 5% 0;
+    }
+
+    .resumo__content p {
+        font-size: 12px;
+        text-align: center;
     }
 }
