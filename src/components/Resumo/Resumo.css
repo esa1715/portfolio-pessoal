@@ -1,11 +1,14 @@
 .resumo {
-    width: 90%;
+    display: flex;
+    width: 100%;
     height: auto;
+    padding-bottom: 2.5%;
+    justify-content: center;
 }
 
 .resumo__content {
     display: flex;
-    width: auto;
+    width: 90%;
     height: auto;
     flex-direction: column;
     align-items: center;
@@ -44,6 +47,10 @@
 }
 
 @media screen and (max-width: 225px) {
+    .resumo {
+        padding-bottom: 5%;
+    }
+    
     .resumo__tit, .resumo__content p {
         padding: 5% 0;
     }
