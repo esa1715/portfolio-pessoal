@@ -1,5 +1,7 @@
-import Resumo from '../Resumo'
+import Navbar from '../Navbar'
 import TechTools from '../TechTools'
+import Resumo from '../Resumo'
+
 import './Main.css'
 
 
@@ -8,6 +10,7 @@ function Main() {
       <main>
         <Resumo />
         <TechTools />
+        <Navbar />
       </main>
   )
 }

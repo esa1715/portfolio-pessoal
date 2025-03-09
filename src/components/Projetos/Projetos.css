@@ -1,0 +1,14 @@
+#projetos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 2.5% 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#projetos ul {
+    width: 90%;
+    color: #fff;
+}
