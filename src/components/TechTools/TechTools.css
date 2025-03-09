@@ -3,8 +3,8 @@
     width: 100%;
     height: auto;
     padding: 2.5% 0;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
 .techtools__content {
@@ -30,12 +30,15 @@
     justify-content: space-evenly;
 }
 
+.techtools__content ul li {
+    width: 20%;
+    height: 20%;
+    padding: 1.25%;
+}
+
 .techtools__content ul li a {
     display: flex;
     flex-direction: column;
-    width: auto;
-    height: auto;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -54,8 +57,13 @@
 }
 
 @media screen and (max-width: 450px) {
-    .techtools, .techTools__tit, .techtools__content ul li {
+    .techTools__tit {
         padding: 2.5% 0;
+    }
+
+    .techtools__content ul li {
+        padding: 2.5%;
+        width: 33%;
     }
  
     .techTools__tit {
@@ -72,13 +80,14 @@
 }
 
 
-@media screen and (max-width: 163px) {
+@media screen and (max-width: 225px) {
     .techtools, .techTools__tit, .techtools__content ul li {
         padding: 5% 0;
     }
     
     .techtools__content ul li {
-        flex: 0 1 calc(100% - 10px);
+        width: 50%;
+        flex: 0 1 calc(50% - 10px);
     }
 
     .techTools__tit {

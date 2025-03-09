@@ -7,19 +7,19 @@ const TechTools = () => {
             <h2 className='techTools__tit'>TECNOLOGIAS E FERRAMENTAS</h2>
             <ul>
                 <li>
-                    <a href='' target="_blank" rel="noreferrer">
+                    <a href='https://developer.mozilla.org/pt-BR/docs/Web/HTML' target="_blank" rel="noreferrer">
                     <img src='/assets/html-5.png' alt="Logo HTML-5" />
                     <span>HTML</span>
                     </a>
                 </li>
                 <li>
-                    <a href='' target="_blank" rel="noreferrer">
+                    <a href='https://developer.mozilla.org/pt-BR/docs/Web/CSS' target="_blank" rel="noreferrer">
                     <img src='/assets/css-3.png' alt="Logo CSS-3" />
                     <span>CSS</span>
                     </a>
                 </li>
                 <li>
-                    <a href='' target="_blank" rel="noreferrer">
+                    <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript' target="_blank" rel="noreferrer">
                     <img src='/assets/javascript.png' alt="Logo JavaScript" />
                     <span>JavaScript</span>
                     </a>
@@ -67,13 +67,13 @@ const TechTools = () => {
                     </a>
                 </li>
                 <li>
-                    <a href='' target="_blank" rel="noreferrer">
+                    <a href='https://www.w3schools.blog/powerpoint-tutorial' target="_blank" rel="noreferrer">
                     <img src='/assets/powerpoint.png' alt="Logo PowerPoint" />
                     <span>PowerPoint</span>
                     </a>
                 </li>
                 <li>
-                    <a href='' target="_blank" rel="noreferrer">
+                    <a href='https://www.w3schools.blog/ms-word-tutorial' target="_blank" rel="noreferrer">
                     <img src='/assets/word.png' alt="Logo Word" />
                     <span>Word</span>
                     </a>
