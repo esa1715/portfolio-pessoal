@@ -1,0 +1,36 @@
+#especialidades {
+    display: flex;
+    width: 90%;
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#especialidades h2 {
+    color: #fff378;
+    font-size: 24px;
+    padding: 1.25% 0;
+}
+
+#especialidades ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#especialidades ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    color: #fff378;
+    text-align: center;
+    border: 1px solid #fff378;
+    padding: 1.25%;
+    margin: 1.25%;
+}

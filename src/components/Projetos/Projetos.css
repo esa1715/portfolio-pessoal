@@ -27,11 +27,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 47.5%;
     color: #fff378;
     text-align: center;
     border: 1px solid #fff378;
-    padding: 1.25%
+    padding: 1.25%;
+    margin: 1.25%;
 }
 
 .projeto img {
@@ -40,14 +41,13 @@
 }
 
 .projeto a {
-    display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
+    padding: 1.25%;
 }
 
 .projeto h3, .projeto h4 {
-    padding: 1.25%;
     text-align: center;
 }
 
