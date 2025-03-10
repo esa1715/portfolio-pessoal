@@ -59,3 +59,44 @@
     width: auto;
     height: auto;
 }
+
+@media screen and (max-width: 450px) {
+    #projetos h2 {
+        font-size: 20px;
+        padding: 2.5% 0;
+    }
+    
+    #projetos ul li {
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    .projeto a {
+        flex-direction: row;
+        width: 100%;
+        font-size: 16px;
+    }
+    
+    .projeto img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 225px) {
+    #projetos h2 {
+        font-size: 14px;
+        padding: 5% 0;
+    }
+    
+    #projetos ul li {
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    .projeto a {
+        flex-direction: row;
+        width: 100%;
+        font-size: 12px;
+    }
+   
+}
