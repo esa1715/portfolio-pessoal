@@ -20,14 +20,18 @@
     height: auto;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
 }
 
 #projetos ul li {
-    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
     color: #fff378;
     text-align: center;
     border: 1px solid #fff378;
+    padding: 1.25%
 }
 
 .projeto img {
@@ -37,13 +41,14 @@
 
 .projeto a {
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
-    padding: 1.25%;
 }
 
-.projeto h3 {
+.projeto h3, .projeto h4 {
     padding: 1.25%;
+    text-align: center;
 }
 
 .tags {
@@ -67,7 +72,6 @@
     }
     
     #projetos ul li {
-        flex-direction: row;
         width: 90%;
     }
     
@@ -89,8 +93,7 @@
     }
     
     #projetos ul li {
-        flex-direction: row;
-        width: 100%;
+        width: 90%;
     }
     
     .projeto a {

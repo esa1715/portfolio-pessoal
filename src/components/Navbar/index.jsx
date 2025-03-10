@@ -14,7 +14,7 @@ const Navbar = () => {
                         <button onClick={() => setSelecaoAtiva('projetos')}>Projetos</button>
                     </li>
                     <li>
-                        <button onClick={() => setSelecaoAtiva('destaque')}>Destaque</button>
+                        <button onClick={() => setSelecaoAtiva('destaque')}>Destaques</button>
                     </li>
                     <li>
                         <button onClick={() => setSelecaoAtiva('contratar')}>Contratar</button>
