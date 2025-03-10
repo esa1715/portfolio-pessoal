@@ -35,6 +35,7 @@
 
 .navbar__content ul li button {
     border: 3px solid #fff378;
+    width: 100%;
     background-color: transparent;
     color: #fff378;
     border-radius: 12px;

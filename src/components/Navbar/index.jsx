@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGear } from '@fortawesome/free-solid-svg-icons'
 import './Navbar.css';
 import Projetos from '../Projetos';
 import Destaque from '../Destaque';
@@ -24,8 +26,8 @@ const Navbar = () => {
 
             <div className='conteudo'>
                 {selecaoAtiva === 'projetos' && <Projetos />}
-                {selecaoAtiva === 'destaque' && <Destaque />}
-                {selecaoAtiva === 'contratar' && <section id="contratar"></section>}
+                {selecaoAtiva === 'destaque' && <section id="destaque"><FontAwesomeIcon icon={faGear} spin style={{color: "333333",}} /> Em desenvolvimento... <FontAwesomeIcon icon={faGear} spin style={{color: "#333333",}} /></section>}
+                {selecaoAtiva === 'contratar' && <section id="contratar"><FontAwesomeIcon icon={faGear} spin style={{color: "#333333",}} /> Em desenvolvimento... <FontAwesomeIcon icon={faGear} spin style={{color: "#333333",}} /></section>}
             </div>
         </section>
     );

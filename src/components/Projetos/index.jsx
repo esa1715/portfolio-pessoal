@@ -6,7 +6,7 @@ const Projetos = () => {
     const projetos = [
         {
             img: "/assets/otreact/preview.png",
-            nome: "OptimusTech - React - ",
+            nome: "OptimusTech - React",
             categoria: " - Projeto Próprio - ",
             link: "https://optimustech-react.vercel.app/",
             tags: ["HTML", "CSS", "JavaScript", "React"],
