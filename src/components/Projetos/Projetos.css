@@ -68,7 +68,7 @@
     
     #projetos ul li {
         flex-direction: row;
-        width: 100%;
+        width: 90%;
     }
     
     .projeto a {
