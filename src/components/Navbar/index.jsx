@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './Navbar.css';
 import Projetos from '../Projetos';
+import Destaque from '../Destaque';
 
 const Navbar = () => {
     const [selecaoAtiva, setSelecaoAtiva] = useState(null);
@@ -10,20 +11,20 @@ const Navbar = () => {
             <div className='navbar__content'>
                 <ul>
                     <li>
-                        <button onClick={() => setSelecaoAtiva('projetos')}>Meus Projetos</button>
+                        <button onClick={() => setSelecaoAtiva('projetos')}>Projetos</button>
                     </li>
                     <li>
-                        <button onClick={() => setSelecaoAtiva('destaque')}>Habilidades em Destaque</button>
+                        <button onClick={() => setSelecaoAtiva('destaque')}>Destaque</button>
                     </li>
                     <li>
-                        <button onClick={() => setSelecaoAtiva('contratar')}>Contratar para Projetos</button>
+                        <button onClick={() => setSelecaoAtiva('contratar')}>Contratar</button>
                     </li>
                 </ul>
             </div>
 
             <div className='conteudo'>
                 {selecaoAtiva === 'projetos' && <Projetos />}
-                {selecaoAtiva === 'destaque' && <section id="destaque"></section>}
+                {selecaoAtiva === 'destaque' && <Destaque />}
                 {selecaoAtiva === 'contratar' && <section id="contratar"></section>}
             </div>
         </section>
