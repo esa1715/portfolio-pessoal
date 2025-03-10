@@ -1,4 +1,6 @@
 import './Especialidades.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMobile,faRotateLeft } from '@fortawesome/free-solid-svg-icons'
 
 const Especialidades = () => {
     const especialidades = [
@@ -18,7 +20,11 @@ const Especialidades = () => {
 
     return (
         <section id='especialidades'>
-            <h2>MINHAS ESPECIALIDADES</h2>
+            <div className='especialidades__tit'>
+                <h2>MINHAS ESPECIALIDADES</h2>
+                <FontAwesomeIcon icon={faMobile} style={{color: "#fff378",}} />
+                <FontAwesomeIcon icon={faRotateLeft} style={{color: "#fff378",}} />
+            </div>
             <ul>
                 {especialidades.map((especialidades, index) => (
                     <li key={index} className='especialidades'>

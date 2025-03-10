@@ -7,10 +7,28 @@
     justify-content: space-between;
 }
 
+.projetos__tit {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
 #projetos h2 {
     color: #fff378;
     font-size: 24px;
-    padding: 1.25% 0;
+    padding: 1.25%;
+    text-wrap: nowrap;
+    text-align: center;
+}
+
+.fa-mobile {
+    rotate: -45deg;
+}
+
+#projetos .fa-mobile, #projetos .fa-rotate-left {
+    padding: 0 2.5%;
+    display: none;
 }
 
 #projetos ul {
@@ -67,8 +85,13 @@
 
 @media screen and (max-width: 450px) {
     #projetos h2 {
+        width: 90%;
         font-size: 20px;
         padding: 2.5% 0;
+    }
+
+    #projetos .fa-mobile, #projetos .fa-rotate-left {
+        display: flex;
     }
     
     #projetos ul li {
@@ -90,6 +113,11 @@
     #projetos h2 {
         font-size: 14px;
         padding: 5% 0;
+        text-wrap: wrap;
+    }
+
+    #projetos .fa-mobile, #projetos .fa-rotate-left {
+        display: none;
     }
     
     #projetos ul li {

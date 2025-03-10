@@ -7,10 +7,28 @@
     justify-content: space-between;
 }
 
+.especialidades__tit {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
 #especialidades h2 {
     color: #fff378;
     font-size: 24px;
-    padding: 1.25% 0;
+    padding: 1.25%;
+    text-wrap: nowrap;
+    text-align: center;
+}
+
+.fa-mobile {
+    rotate: -45deg;
+}
+
+#especialidades .fa-mobile, #especialidades .fa-rotate-left {
+    padding: 0 2.5%;
+    display: none;
 }
 
 #especialidades ul {
@@ -33,4 +51,52 @@
     border: 1px solid #fff378;
     padding: 1.25%;
     margin: 1.25%;
+}
+
+@media screen and (max-width: 450px) {
+    #especialidades h2 {
+        font-size: 20px;
+        padding: 2.5% 0;
+    }
+
+    #especialidades .fa-mobile, #especialidades .fa-rotate-left {
+        display: flex;
+    }
+    
+    #especialidades ul li {
+        width: 90%;
+    }
+    
+    #especialidades ul li p {
+        flex-direction: row;
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 225px) {
+    #especialidades h2 {
+        font-size: 14px;
+        padding: 5% 0;
+        text-wrap: wrap;
+    }
+
+    #especialidades .fa-mobile, #especialidades .fa-rotate-left {
+        display: none;
+    }
+    
+    #especialidades ul li {
+        width: 90%;
+    }
+    
+    #especialidades ul li h3 {
+        font-size: 14px;
+    }
+
+    #especialidades ul li p {
+        flex-direction: row;
+        width: 100%;
+        font-size: 12px;
+    }
+   
 }

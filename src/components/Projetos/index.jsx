@@ -1,6 +1,7 @@
 import './Projetos.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLink } from '@fortawesome/free-solid-svg-icons'
+import { faMobile, faRotateLeft, faLink } from '@fortawesome/free-solid-svg-icons'
+
 
 const Projetos = () => {
     const projetos = [
@@ -87,7 +88,11 @@ const Projetos = () => {
     
     return (
         <section id='projetos'>
-            <h2>MEUS PROJETOS</h2>
+            <div className='projetos__tit'>
+                <h2>MEUS PROJETOS</h2>
+                <FontAwesomeIcon icon={faMobile} style={{color: "#fff378",}} />
+                <FontAwesomeIcon icon={faRotateLeft} style={{color: "#fff378",}} />
+            </div>
             <ul>
                 {projetos.map((projeto, index) => (
                     <li key={index} className='projeto'>
