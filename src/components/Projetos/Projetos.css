@@ -103,10 +103,6 @@
         width: 100%;
         font-size: 16px;
     }
-    
-    .projeto img {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 225px) {
@@ -129,5 +125,4 @@
         width: 100%;
         font-size: 12px;
     }
-   
 }
