@@ -37,4 +37,4 @@ const Especialidades = () => {
     )
 }
 
-export default Especialidades
+export default Especialidades;

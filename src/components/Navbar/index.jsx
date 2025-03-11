@@ -1,9 +1,10 @@
 import { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGear } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faGear } from '@fortawesome/free-solid-svg-icons'
 import './Navbar.css';
 import Projetos from '../Projetos';
 import Especialidades from '../Especialidades';
+import Proposta from '../Proposta';
 
 const Navbar = () => {
     const [selecaoAtiva, setSelecaoAtiva] = useState(null);
@@ -19,7 +20,7 @@ const Navbar = () => {
                         <button onClick={() => setSelecaoAtiva('especialidades')}>Especialidades</button>
                     </li>
                     <li>
-                        <button onClick={() => setSelecaoAtiva('contratar')}>Contratar</button>
+                        <button onClick={() => setSelecaoAtiva('proposta')}>Proposta</button>
                     </li>
                 </ul>
             </div>
@@ -27,7 +28,7 @@ const Navbar = () => {
             <div className='conteudo'>
                 {selecaoAtiva === 'projetos' && <Projetos />}
                 {selecaoAtiva === 'especialidades' && <Especialidades />}
-                {selecaoAtiva === 'contratar' && <section id="contratar"><FontAwesomeIcon icon={faGear} spin style={{color: "#333333",}} /> Em desenvolvimento... <FontAwesomeIcon icon={faGear} spin style={{color: "#333333",}} /></section>}
+                {selecaoAtiva === 'proposta' && <Proposta />}
             </div>
         </section>
     );
