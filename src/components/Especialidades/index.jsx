@@ -5,17 +5,17 @@ import { faMobile,faRotateLeft } from '@fortawesome/free-solid-svg-icons'
 const Especialidades = () => {
     const especialidades = [
         {
-            nome: "React",
-            descricao: "Desenvolver aplicações robustas em React, otimizando a reutilização de componentes e a organização do código para uma manutenção eficiente e escalável."
+            "nome": "React",
+            "descricao": "Desenvolver aplicações robustas em React, priorizando a reutilização de componentes e a organização do código para garantir manutenção eficiente e escalabilidade."
         },
         {
-            nome: "Responsividade",
-            descricao: "Desenvolver layouts responsivos que se adaptam perfeitamente a diferentes dispositivos, desde desktops até smartwatches"
+            "nome": "Responsividade",
+            "descricao": "Criar layouts totalmente responsivos, garantindo adaptação fluida a diferentes dispositivos, desde desktops até smartwatches."
         },
         {
-            nome: "Design Interativo",
-            descricao: "Criar interações dinâmicas e atraentes, como animações e efeitos de hover, para tornar a experiência do usuário mais envolvente e intuitiva."
-        },
+            "nome": "Design Interativo",
+            "descricao": "Desenvolver interações dinâmicas e envolventes, como animações e efeitos de hover, para aprimorar a experiência do usuário."
+        }        
     ]
 
     return (
