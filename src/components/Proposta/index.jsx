@@ -23,12 +23,12 @@ function sendEmail(e) {
 
   emailjs.send("service_g0fdcsh", "template_tembsqi", templateParams, "tKfoA_41B4rKrfbf1")
   .then((response) => {
-    console.log("EMAIL ENVIADO", response.status, response.text)
+    alert("EMAIL ENVIADO", response.status, response.text)
     setName('')
     setEmail('')
     setMessage('')
 }, (err) => {
-    console.log("ERRO: ", err)
+    alert("ERRO: ", err)
 })
 }
 
@@ -36,7 +36,7 @@ return (
     <div className="proposta">
       <h2>ENVIE SUA IDEIA OU PROPOSTA</h2>
       <h3>Pensa que posso ajudar no seu projeto? Envie sua proposta ou ideia, ficarei feliz em recebê-la!</h3>
-      <form className="form" onSubmit={(sendEmail)}>
+      <form className="form" onSubmit={sendEmail}>
         <input 
           className="input"
           type="text"
@@ -47,7 +47,7 @@ return (
         
         <input 
           className="input"
-          type="text"
+          type="email"
           placeholder="Digite seu email"
           onChange={(e) => setEmail(e.target.value)}
           value={email}
