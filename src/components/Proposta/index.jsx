@@ -1,4 +1,3 @@
-// import React, { useState } from 'react';
 import { useState } from 'react';
 import './Proposta.css';
 import emailjs from '@emailjs/browser';
@@ -24,7 +23,7 @@ function sendEmail(e) {
 
   emailjs.send("service_g0fdcsh", "template_tembsqi", templateParams, "tKfoA_41B4rKrfbf1")
   .then((response) => {
-    console.log("EMAIL ENVIADO FDP", response.status, response.text)
+    console.log("EMAIL ENVIADO", response.status, response.text)
     setName('')
     setEmail('')
     setMessage('')
