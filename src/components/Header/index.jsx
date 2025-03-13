@@ -24,7 +24,7 @@ const Header = () => {
                             </a>
                         </li>
                         <li>
-                            <a href='https://github.com/esa1715' target="_blank" rel="noreferrer">
+                            <a href='https://www.linkedin.com/in/erikalves12' target="_blank" rel="noreferrer">
                             <FontAwesomeIcon icon={faLinkedinIn} size="2xl" style={{color: "#ffed7e",}} />
                             </a>    
                         </li>
