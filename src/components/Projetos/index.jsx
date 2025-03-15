@@ -49,7 +49,7 @@ const Projetos = () => {
             img: "/assets/pagupload/preview.png",
             nome: "Página de Upload da CodeConnect",
             categoria: " - Curso Alura - ",
-            link: "https://pag-organo-react.vercel.app/",
+            link: "https://esa1715.github.io/pag-upload-code-connect/",
             tags: ["JavaScript"],
         },
 
