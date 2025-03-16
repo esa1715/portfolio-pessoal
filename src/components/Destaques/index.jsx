@@ -50,12 +50,16 @@ const Destaques = () => {
                                 </div>
                                 <p className='destaque__desc'>{destaque.descricao}</p>
                                 <div className='destaque__links'>
-                                    <span>Repositório:</span>
-                                    <a href={destaque.repositorio} target="_blank" rel="noreferrer">{destaque.repositorio}</a> 
+                                    <a href={destaque.repositorio} target="_blank" rel="noreferrer">
+                                        <FontAwesomeIcon icon={faLink} size="xs" style={{color: "#fff378",}} />
+                                        <span>Repositório</span>
+                                    </a> 
                                 </div>
                                 <div className='destaque__links'>
-                                    <span>Projeto:</span>
-                                    <a href={destaque.projeto} target="_blank" rel="noreferrer">{destaque.projeto}</a>
+                                    <a href={destaque.projeto} target="_blank" rel="noreferrer">
+                                        <FontAwesomeIcon icon={faLink} size="xs" style={{color: "#fff378",}} />
+                                        <span>Projeto</span>
+                                    </a>
                                 </div>
                             </div>
                         </li>
