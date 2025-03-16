@@ -1,0 +1,144 @@
+#destaques {
+    display: flex;
+    width: 90%;
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.destaques__tit {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+#destaques h2 {
+    color: #fff378;
+    font-size: 24px;
+    padding: 1.25%;
+    text-wrap: wrap;
+    text-align: center;
+}
+
+.fa-mobile {
+    rotate: -45deg;
+}
+
+#destaques .fa-mobile, #destaques .fa-rotate-left {
+    padding: 0 2.5%;
+    display: none;
+}
+
+#destaques ul {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#destaques ul li {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    color: #fff378;
+    border: 1px solid #fff378;
+    margin: 1.25%;
+}
+
+#destaques ul li img {
+    width: 100%;
+    padding: 1.25%;
+}
+
+.destaque__info {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 2.5%;
+}
+
+.destaque__tit {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.destaque__tit h3 {
+    font-size: 22px;
+}
+
+.destaque__desc {
+    display: flex;
+    text-align: center;
+}
+
+.destaque__links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.destaque__links a {
+    text-decoration: underline;
+    text-align: center;
+}
+
+@media screen and (max-width: 450px) {
+    #destaques h2 {
+        width: 90%;
+        font-size: 20px;
+        padding: 2.5% 0;
+    }
+
+    #destaques .fa-mobile, #destaques .fa-rotate-left {
+        display: flex;
+    }
+
+    #destaques ul li {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #destaques ul li img {
+        width: 100%;
+    }
+
+    .destaque__info {
+        width: 90%;
+        height: auto;
+        gap: 1rem;
+    }
+
+    .destaque__links {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 225px) {
+    #destaques h2 {
+        font-size: 16px;
+    }
+
+    #destaques .fa-mobile, #destaques .fa-rotate-left {
+        display: none;
+    }
+
+    .destaque__tit h3 {
+        font-size: 15px;
+    }
+
+    .destaque__tit p, .destaque__desc, .destaque__links span, .destaque__links a {
+        font-size: 12px;
+    }
+}

@@ -5,6 +5,7 @@ import './Navbar.css';
 import Projetos from '../Projetos';
 import Especialidades from '../Especialidades';
 import Proposta from '../Proposta';
+import Destaques from '../Destaques';
 
 const Navbar = () => {
     const [selecaoAtiva, setSelecaoAtiva] = useState(null);
@@ -13,6 +14,9 @@ const Navbar = () => {
         <section className='navbar'>
             <div className='navbar__content'>
                 <ul>
+                    <li>
+                        <button onClick={() => setSelecaoAtiva('destaques')}>Destaques</button>
+                    </li>
                     <li>
                         <button onClick={() => setSelecaoAtiva('projetos')}>Projetos</button>
                     </li>
@@ -26,6 +30,7 @@ const Navbar = () => {
             </div>
 
             <div className='conteudo'>
+                {selecaoAtiva === 'destaques' && <Destaques />}
                 {selecaoAtiva === 'projetos' && <Projetos />}
                 {selecaoAtiva === 'especialidades' && <Especialidades />}
                 {selecaoAtiva === 'proposta' && <Proposta />}

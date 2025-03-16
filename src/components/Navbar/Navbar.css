@@ -46,7 +46,7 @@
 .navbar__content ul li button:hover {
     background-color: #f5fdfd;
     color: #051962;
-    transform: scale(1.25);
+    transform: scale(1.1);
 }
 
 .conteudo {

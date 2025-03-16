@@ -4,23 +4,7 @@ import { faMobile, faRotateLeft, faLink } from '@fortawesome/free-solid-svg-icon
 
 
 const Projetos = () => {
-    const projetos = [
-        {
-            img: "/assets/otreact/preview.png",
-            nome: "OptimusTech - React",
-            categoria: " - Projeto Próprio - ",
-            link: "https://optimustech-react.vercel.app/",
-            tags: ["HTML", "CSS", "JavaScript", "React"],
-        },
-
-        {
-            img: "/assets/pcorgano/preview.png",
-            nome: "Página de Colaboradores da Organo",
-            categoria: " - Curso Alura - ",
-            link: "https://pag-organo-react.vercel.app/",
-            tags: ["HTML", "CSS", "JavaScript", "React"],
-        },
-        
+    const projetos = [ 
         {
             img: "/assets/profokus/preview.png",
             nome: "Projeto Fokus",
@@ -76,14 +60,6 @@ const Projetos = () => {
             link: "https://esa1715.github.io/pag-vagas-empresa-ficticia/",
             tags: ["HTML", "CSS"],
         },
-
-        {
-            img: "/assets/lpspotify/preview.png",
-            nome: "Landing Page do Spotify - Alura",
-            categoria: " - Imersão Front-End Alura - ",
-            link: "https://esa1715.github.io/landing-page-spotify/",
-            tags: ["HTML ", "CSS ", ,"JavaScript ", "React "],
-        }
     ]
     
     return (
@@ -96,12 +72,12 @@ const Projetos = () => {
             <ul>
                 {projetos.map((projeto, index) => (
                     <li key={index} className='projeto'>
-                        <img src={projeto.img} />
                         <a href={projeto.link} target="_blank" rel="noreferrer">
+                            <img src={projeto.img} />
                             <FontAwesomeIcon icon={faLink} size="xs" style={{color: "#fff378",}} />
                             <h3>{projeto.nome}</h3>
+                            <h4>{projeto.categoria}</h4>
                         </a>
-                        <h4>{projeto.categoria}</h4>
                         {/* <div className="tags">
                             {projeto.tags.map((tag, i) => (
                                 <span key={i} className="tag">{tag}</span>
