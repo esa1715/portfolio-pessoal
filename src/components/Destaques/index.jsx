@@ -17,7 +17,7 @@ const Destaques = () => {
             img: "/assets/pcorgano/preview.png",
             nome: "Página de Colaboradores da Organo",
             categoria: " - Curso Alura - ",
-            descricao: 'Projeto criado do zero durante o "Curso de React: Desenvolvendo com JavaScript" da Alura. A aplicação utiliza React e JavaScript para possibilitar a criação dinâmica de cards para colaboradores, com personalização de acordo com o time do colaborador',
+            descricao: 'Projeto criado do zero durante o "Curso de React: Desenvolvendo com JavaScript" da Alura. A aplicação utiliza React e JavaScript para possibilitar a criação dinâmica de cards para colaboradores, com personalização de acordo com o time do colaborador.',
             repositorio: "https://github.com/esa1715/pag-organo-react",
             projeto: "https://pag-organo-react.vercel.app/",
         },
@@ -26,7 +26,7 @@ const Destaques = () => {
             img: "/assets/lpspotify/preview.png",
             nome: "Landing Page do Spotify - Alura",
             categoria: " - Imersão Front-End Alura - ",
-            descricao: "Meu primeiro projeto, desenvolvido durante a 2ª Imersão Front-End da Alura. Trata-se de uma réplica da landing page do Spotify",
+            descricao: "Meu primeiro projeto, desenvolvido durante a 2ª Imersão Front-End da Alura. Trata-se de uma réplica da landing page do Spotify. Foi nessa imersão que comecei a me interessar por essa área e onde passei a entender melhor HTML e CSS, além de ter meu primeiro contato com JavaScript e React.",
             repositorio: "https://github.com/esa1715/landing-page-spotify",
             projeto: "https://esa1715.github.io/landing-page-spotify/",    
         }
