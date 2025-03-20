@@ -76,3 +76,26 @@ ul li a span {
     padding: 5% 0;
   }
 }
+
+@media screen and (max-width: 225px) {
+  .theme-switch {
+    height: 30px;
+    width: 70px;
+  }
+  .switch-indicator {
+    width: 20px;
+    height: 20px;
+  } 
+  
+  .moon-icon, .sun-icon {
+    font-size: 15px;
+  }
+
+  .moon-icon {
+    margin-left: 5px;
+  }
+
+  .sun-icon {
+    margin-right: 5px;
+  }
+}
