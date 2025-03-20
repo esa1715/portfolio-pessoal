@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
 import Header from './components/Header';
 import Main from './components/Main';
@@ -15,17 +17,19 @@ function App() {
       setIsLightTheme(true);
       document.body.classList.add('light-theme');
     } else {
+      setIsLightTheme(false);
       document.body.classList.remove('light-theme');
     }
   }, []);
 
   // Função para alternar o tema
-  const toggleTheme = () => {
-    setIsLightTheme(!isLightTheme);
-    if (!isLightTheme) {
+  const toggleTheme = (theme) => {
+    if (theme === 'light') {
+      setIsLightTheme(true);
       document.body.classList.add('light-theme');
       localStorage.setItem('theme', 'light');
     } else {
+      setIsLightTheme(false);
       document.body.classList.remove('light-theme');
       localStorage.setItem('theme', 'dark');
     }
@@ -33,10 +37,24 @@ function App() {
 
   return (
     <div className='App'>
-      {/* Adicionando o botão para alternar o tema */}
-      <button onClick={toggleTheme}>
-        {isLightTheme ? 'Modo Escuro' : 'Modo Claro'}
-      </button>
+      <section className='tema'>
+        <div className="theme-switch">
+          <div className={`switch-indicator ${isLightTheme ? 'light' : 'dark'}`} />
+          <FontAwesomeIcon 
+            icon={faMoon} 
+            className="icon moon-icon"
+            style={{color: "#f5fdfd",}}
+            onClick={() => toggleTheme('dark')}
+          />
+          <FontAwesomeIcon 
+            icon={faSun} 
+            style={{color: "#f5fdfd",}} 
+            className="icon sun-icon"
+            onClick={() => toggleTheme('light')}
+            />
+        </div>
+      </section>
+
       <Header />
       <Main />
       <Footer />
@@ -45,4 +63,3 @@ function App() {
 }
 
 export default App;
- 

@@ -19,3 +19,55 @@ body {
 ul li a span {
   color: var(--ulis-color);
 }
+
+.tema {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5%;
+}
+
+.theme-switch {
+  position: relative;
+  top: 10px;
+  width: 80px;
+  height: 40px;
+  background-color: var(--text-color);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  transition: background 0.3s ease;
+}
+
+.switch-indicator {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: left 0.3s ease;
+}
+
+.dark {
+  left: 5px;
+}
+
+.light {
+  left: 45px;
+}
+
+.moon-icon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.sun-icon {
+  margin-right: 10px;
+  cursor: pointer
+}
