@@ -9,12 +9,10 @@
     width: 100%;
     height: auto;
     justify-content: center;
-    background: #04080d;
 }
 
 .footer span {
     width: 90%;
-    color: #fff478;
     font-size: 12px;
     text-align: center;
 }

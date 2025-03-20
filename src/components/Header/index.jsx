@@ -15,22 +15,22 @@ const Header = () => {
                     <ul>
                         <li>
                             <a href='https://mail.google.com/mail/?view=cm&fs=1&to=silvalveserik1@gmail.com&su=Portfólio%20pessoal%20' target="_blank" rel="noreferrer">
-                            <FontAwesomeIcon icon={faAt} size="2xl" style={{color: "#ffed7e",}} />
+                            <FontAwesomeIcon icon={faAt} size="2xl" className="icon" />
                             </a>
                         </li>
                         <li>
                             <a href='https://github.com/esa1715' target="_blank" rel="noreferrer">
-                            <FontAwesomeIcon icon={faGithub} size='2xl' style={{color: "#ffed7e",}} />
+                            <FontAwesomeIcon icon={faGithub} size="2xl" className="icon" />
                             </a>
                         </li>
                         <li>
                             <a href='https://www.linkedin.com/in/erikalves12' target="_blank" rel="noreferrer">
-                            <FontAwesomeIcon icon={faLinkedinIn} size="2xl" style={{color: "#ffed7e",}} />
+                            <FontAwesomeIcon icon={faLinkedinIn} size="2xl" className="icon" />
                             </a>    
                         </li>
                         <li>
                             <a href='https://api.whatsapp.com/send/?phone=%2B5511933329021&text&type=phone_number&app_absent=0' target="_blank" rel="noreferrer">
-                            <FontAwesomeIcon icon={faWhatsapp} size="2xl" style={{color: "#ffed7e",}} />
+                            <FontAwesomeIcon icon={faWhatsapp} size="2xl" className="icon" />
                             </a>
                         </li>
                     </ul>

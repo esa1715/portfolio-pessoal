@@ -9,14 +9,13 @@
   }
 
 .proposta h2, .proposta h3 {
-    color: #fff378;
     text-align: center;
 }
 
 .proposta h2 {
     padding: 1.25% 0;
     font-size: 24px;
-    text-wrap: nowrap;
+    text-wrap: wrap;
 }
 
 .proposta h3 {
@@ -27,7 +26,7 @@
 }
   
   .form{
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -36,14 +35,14 @@
     margin-bottom: 14px;
     height: auto;
     border-radius: 12px;
-    border: 3px solid #fff378;
+    border: 3px solid var(--text-color);
     padding: 1.25%;
-    background: #f5fdfd;
-    color: #051962;
+    background: transparent;
+    color: var(--text-color);
   }
   
   .input::placeholder, .textarea::placeholder {
-    color: #051962;
+    color: var(--text-color);
   }
 
   .textarea{
@@ -52,23 +51,20 @@
     padding: 1.25%;
     height: auto;
     resize: none;
-    border: 3px solid #fff378;
+    border: 3px solid var(--text-color);
+    background: transparent;
+    color: var(--text-color);
   }
   
   .button{
-    border: 3px solid #fff378;
+    border: 3px solid var(--text-color);
     width: 100%;
     background-color: transparent;
-    color: #fff378;
+    color: var(--text-color);
     border-radius: 12px;
     padding: 2.5%;
     transition: transform 0.3s ease-in-out;
-}
-  
-  .button:hover{
-    background-color: #f5fdfd;
-    color: #051962;
-    transform: scale(1.05);
+    cursor: pointer;
   }
 
 @media screen and (max-width: 450px) {
@@ -86,4 +82,18 @@
     .form {
         width: 80%;
     }
+}
+
+@media screen and (max-width: 225px) {
+  .proposta h2 {
+    font-size: 16px;
+  }
+
+  .proposta h3 {
+    font-size: 15px;
+  }
+
+  .input, .input::placeholder, .textarea::placeholder, .textarea, .button {
+    font-size: 12px;
+  }
 }

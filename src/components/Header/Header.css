@@ -9,7 +9,6 @@ header {
     flex-direction: column;
     width: 100%;
     height: auto;
-    background-color: #04080d;
     align-items: center;
     padding: 5% 0 2.5% 0;
 }
@@ -25,12 +24,11 @@ header {
 .header__avatar {
     width: 33%;
     border-radius: 50%;
-    padding: 1.25% 0;
     cursor: pointer;
+    border: 2px solid var(--text-color);
 }
 
 .header__tit, .header__sub, .header__redes h2 {
-    color: #fff378;
     text-align: center;
     padding: 1.25% 0;
 }
@@ -77,7 +75,7 @@ header {
         max-width: 90%;
     }
 
-    .header__avatar, .header__tit, .header__sub, .header__redes h2, .header__redes li {
+    .header__tit, .header__sub, .header__redes h2, .header__redes li {
         padding: 2.5% 0;
     }
 
@@ -103,7 +101,7 @@ header {
 }
 
 @media screen and (max-width: 225px) {
-    .header__avatar, .header__tit, .header__sub, .header__redes h2, .header__redes ul li {
+    .header__tit, .header__sub, .header__redes h2, .header__redes ul li {
         padding: 5% 0;
         text-wrap: wrap;
     }  

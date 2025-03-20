@@ -15,7 +15,6 @@
 }
 
 #especialidades h2 {
-    color: #fff378;
     font-size: 24px;
     padding: 1.25%;
     text-wrap: nowrap;
@@ -46,9 +45,8 @@
     justify-content: center;
     align-items: center;
     width: 30%;
-    color: #fff378;
     text-align: center;
-    border: 1px solid #fff378;
+    border: 1px solid var(--text-color);
     padding: 1.25%;
     margin: 1.25%;
 }

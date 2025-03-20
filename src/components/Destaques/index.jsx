@@ -36,8 +36,8 @@ const Destaques = () => {
         <section id='destaques'>
             <div className='destaques__tit'>
                 <h2>PROJETOS EM DESTAQUE</h2>
-                <FontAwesomeIcon icon={faMobile} style={{color: "#fff378",}} />
-                <FontAwesomeIcon icon={faRotateLeft} style={{color: "#fff378",}} />
+                <FontAwesomeIcon icon={faMobile}/>
+                <FontAwesomeIcon icon={faRotateLeft}/>
             </div>
                 <ul>
                     {destaques.map((destaque, index) => (
@@ -51,13 +51,13 @@ const Destaques = () => {
                                 <p className='destaque__desc'>{destaque.descricao}</p>
                                 <div className='destaque__links'>
                                     <a href={destaque.repositorio} target="_blank" rel="noreferrer">
-                                        <FontAwesomeIcon icon={faLink} size="xs" style={{color: "#fff378",}} />
+                                        <FontAwesomeIcon icon={faLink} size="xs"/>
                                         <span>Repositório</span>
                                     </a> 
                                 </div>
                                 <div className='destaque__links'>
                                     <a href={destaque.projeto} target="_blank" rel="noreferrer">
-                                        <FontAwesomeIcon icon={faLink} size="xs" style={{color: "#fff378",}} />
+                                        <FontAwesomeIcon icon={faLink} size="xs"/>
                                         <span>Projeto</span>
                                     </a>
                                 </div>

@@ -34,18 +34,18 @@
 }
 
 .navbar__content ul li button {
-    border: 3px solid #fff378;
+    border: 3px solid var(--text-color);
     width: 100%;
     background-color: transparent;
-    color: #fff378;
+    color: var(--text-color);
     border-radius: 12px;
     padding: 2.5%;
     transition: transform 0.3s ease-in-out;
 }
 
 .navbar__content ul li button:hover {
-    background-color: #f5fdfd;
-    color: #051962;
+    /* background-color: #f5fdfd;
+    color: #051962; */
     transform: scale(1.1);
 }
 
@@ -72,5 +72,11 @@
     .navbar__content ul li button {
         font-size: 16px;
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 225px) {
+    .navbar__content ul li button {
+        font-size: 12px;
     }
 }

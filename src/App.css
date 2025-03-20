@@ -1,0 +1,21 @@
+:root {
+  --bg-color: #04080d;
+  --text-color: #fff378;
+  --ulis-color: #fff378;
+}
+
+.light-theme {
+  --bg-color: #f5fdfd;
+  --text-color: #051962;
+  --ulis-color: #051962;
+}
+  
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+ul li a span {
+  color: var(--ulis-color);
+}

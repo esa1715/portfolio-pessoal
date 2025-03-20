@@ -16,7 +16,6 @@
 }
 
 .techTools__tit {
-    color: #ffed7e;
     font-size: 24px;
     padding: 1.25% 0;
     text-align: center;
@@ -53,7 +52,6 @@
 
 .techtools__content ul li a span {
     font-size: 16px;
-    color: rgb(255, 255, 255, 0.25);
 }
 
 @media screen and (max-width: 450px) {

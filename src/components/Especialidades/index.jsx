@@ -25,8 +25,8 @@ const Especialidades = () => {
         <section id='especialidades'>
             <div className='especialidades__tit'>
                 <h2>MINHAS ESPECIALIDADES</h2>
-                <FontAwesomeIcon icon={faMobile} style={{color: "#fff378",}} />
-                <FontAwesomeIcon icon={faRotateLeft} style={{color: "#fff378",}} />
+                <FontAwesomeIcon icon={faMobile}/>
+                <FontAwesomeIcon icon={faRotateLeft}/>
             </div>
             <ul>
                 {especialidades.map((especialidades, index) => (

@@ -15,7 +15,6 @@
 }
 
 #destaques h2 {
-    color: #fff378;
     font-size: 24px;
     padding: 1.25%;
     text-wrap: wrap;
@@ -46,8 +45,7 @@
     width: 100%;
     height: auto;
     align-items: center;
-    color: #fff378;
-    border: 1px solid #fff378;
+    border: 1px solid var(--text-color);
     margin: 1.25%;
 }
 

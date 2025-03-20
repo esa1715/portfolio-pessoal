@@ -66,15 +66,15 @@ const Projetos = () => {
         <section id='projetos'>
             <div className='projetos__tit'>
                 <h2>MEUS PROJETOS</h2>
-                <FontAwesomeIcon icon={faMobile} style={{color: "#fff378",}} />
-                <FontAwesomeIcon icon={faRotateLeft} style={{color: "#fff378",}} />
+                <FontAwesomeIcon icon={faMobile}/>
+                <FontAwesomeIcon icon={faRotateLeft}/>
             </div>
             <ul>
                 {projetos.map((projeto, index) => (
                     <li key={index} className='projeto'>
                         <a href={projeto.link} target="_blank" rel="noreferrer">
                             <img src={projeto.img} />
-                            <FontAwesomeIcon icon={faLink} size="xs" style={{color: "#fff378",}} />
+                            <FontAwesomeIcon icon={faLink} size="xs"/>
                             <h3>{projeto.nome}</h3>
                             <h4>{projeto.categoria}</h4>
                         </a>
