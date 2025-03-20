@@ -26,12 +26,11 @@ ul li a span {
   height: auto;
   align-items: center;
   justify-content: center;
-  padding: 2.5%;
+  padding: 2.5% 0;
 }
 
 .theme-switch {
   position: relative;
-  top: 10px;
   width: 80px;
   height: 40px;
   background-color: var(--text-color);
@@ -70,4 +69,10 @@ ul li a span {
 .sun-icon {
   margin-right: 10px;
   cursor: pointer
+}
+
+@media screen and (max-width: 450px) {
+  .tema {
+    padding: 5% 0;
+  }
 }

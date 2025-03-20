@@ -55,6 +55,10 @@
 }
 
 @media screen and (max-width: 450px) {
+    .techtools {
+        padding: 5% 0;
+    }
+    
     .techTools__tit {
         padding: 2.5% 0;
     }

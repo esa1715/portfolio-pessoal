@@ -80,7 +80,7 @@ const Proposta = () => {
         <input 
           className="input"
           type="text"
-          placeholder="Digite seu nome"
+          placeholder="Digite seu nome..."
           onChange={(e) => setName(e.target.value)}
           value={name}
         />
@@ -88,7 +88,7 @@ const Proposta = () => {
         <input 
           className="input"
           type="email"
-          placeholder="Digite seu email"
+          placeholder="Digite seu email..."
           onChange={(e) => setEmail(e.target.value)}
           value={email}
         />

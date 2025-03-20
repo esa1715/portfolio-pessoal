@@ -9,14 +9,14 @@
 
 .especialidades__tit {
     display: flex;
-    width: 100%;
+    width: 90%;
     justify-content: center;
     align-items: center;
 }
 
 #especialidades h2 {
     font-size: 24px;
-    padding: 1.25%;
+    padding: 1.25% 0;
     text-wrap: nowrap;
     text-align: center;
 }
@@ -55,6 +55,7 @@
     #especialidades h2 {
         font-size: 20px;
         padding: 2.5% 0;
+        width: 90%;
     }
 
     #especialidades .fa-mobile, #especialidades .fa-rotate-left {

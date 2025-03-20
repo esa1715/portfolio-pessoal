@@ -16,7 +16,7 @@
 
 #projetos h2 {
     font-size: 24px;
-    padding: 1.25%;
+    padding: 1.25% 0;
     text-wrap: nowrap;
     text-align: center;
 }
@@ -54,6 +54,7 @@
 .projeto img {
     width: 100%;
     height: auto;
+    border: 1px solid var(--text-color);
 }
 
 .projeto a {
