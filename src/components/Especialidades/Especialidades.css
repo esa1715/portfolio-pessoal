@@ -51,6 +51,10 @@
     margin: 1.25%;
 }
 
+#especialidades ul li h3 {
+    padding: 1.25% 0;
+}
+
 @media screen and (max-width: 450px) {
     #especialidades h2 {
         font-size: 20px;
@@ -63,7 +67,7 @@
     }
     
     #especialidades ul li {
-        width: 90%;
+        width: 100%;
     }
     
     #especialidades ul li p {

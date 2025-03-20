@@ -53,7 +53,6 @@
 
 .projeto img {
     width: 100%;
-    height: auto;
     border: 1px solid var(--text-color);
 }
 
@@ -94,7 +93,7 @@
     }
     
     #projetos ul li {
-        width: 90%;
+        width: 100%;
     }
     
     .projeto a {

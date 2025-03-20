@@ -47,11 +47,13 @@
     align-items: center;
     border: 1px solid var(--text-color);
     margin: 1.25%;
+    padding: 1.25%;
 }
 
 #destaques ul li img {
     width: 100%;
     padding: 1.25%;
+    border: 1px solid var(--text-color);
 }
 
 .destaque__info {
@@ -68,6 +70,7 @@
     flex-direction: column;
     width: 100%;
     text-align: center;
+    padding: 1.25% 0;
 }
 
 .destaque__tit h3 {
@@ -106,10 +109,6 @@
     #destaques ul li {
         flex-direction: column;
         height: auto;
-    }
-
-    #destaques ul li img {
-        width: 100%;
     }
 
     .destaque__info {
