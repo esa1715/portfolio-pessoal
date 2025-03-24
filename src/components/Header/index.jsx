@@ -15,22 +15,26 @@ const Header = () => {
                     <ul>
                         <li>
                             <a href='https://mail.google.com/mail/?view=cm&fs=1&to=silvalveserik1@gmail.com&su=Portfólio%20pessoal%20' target="_blank" rel="noreferrer">
-                            <FontAwesomeIcon icon={faAt} size="2xl" className="icon" alt="Email pessoal de Erik" />
+                            <FontAwesomeIcon icon={faAt} size="2xl" className="icon" />
+                            <span className="sr-only">Email pessoal de Erik</span>
                             </a>
                         </li>
                         <li>
                             <a href='https://github.com/esa1715' target="_blank" rel="noreferrer">
-                            <FontAwesomeIcon icon={faGithub} size="2xl" className="icon" alt="Página de perfil de Erik no GitHub" />
+                            <FontAwesomeIcon icon={faGithub} size="2xl" className="icon" />
+                            <span className="sr-only">Página de perfil de Erik no GitHub</span>
                             </a>
                         </li>
                         <li>
                             <a href='https://www.linkedin.com/in/erikalves12' target="_blank" rel="noreferrer">
-                            <FontAwesomeIcon icon={faLinkedinIn} size="2xl" className="icon" alt="Página de perfil de Erik no LinkedIn" />
+                            <FontAwesomeIcon icon={faLinkedinIn} size="2xl" className="icon" />
+                            <span className="sr-only">Página de perfil de Erik no LinkedIn</span>
                             </a>    
                         </li>
                         <li>
                             <a href='https://api.whatsapp.com/send/?phone=%2B5511933329021&text&type=phone_number&app_absent=0' target="_blank" rel="noreferrer">
-                            <FontAwesomeIcon icon={faWhatsapp} size="2xl" className="icon" alt="Link para o WhatsApp pessoal de Erik" />
+                            <FontAwesomeIcon icon={faWhatsapp} size="2xl" className="icon" />
+                            <span className="sr-only">WhatsApp pessoal de Erik</span>
                             </a>
                         </li>
                     </ul>
