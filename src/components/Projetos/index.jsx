@@ -1,7 +1,7 @@
 import './Projetos.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMobile, faRotateLeft, faLink } from '@fortawesome/free-solid-svg-icons'
-
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Projetos = () => {
     const projetos = [ 
@@ -73,16 +73,15 @@ const Projetos = () => {
                 {projetos.map((projeto, index) => (
                     <li key={index} className='projeto'>
                         <a href={projeto.link} target="_blank" rel="noreferrer">
-                            <img src={projeto.img}  alt='preview do projeto'/>
+                            <LazyLoadImage 
+                                src={projeto.img} 
+                                alt="preview do projeto"
+                                effect="blur"
+                            />
                             <FontAwesomeIcon icon={faLink} size="xs"/>
                             <h3>{projeto.nome}</h3>
                             <h4>{projeto.categoria}</h4>
                         </a>
-                        {/* <div className="tags">
-                            {projeto.tags.map((tag, i) => (
-                                <span key={i} className="tag">{tag}</span>
-                            ))}
-                        </div> */}
                     </li>
                 ))}
             </ul>
