@@ -73,7 +73,7 @@ const Projetos = () => {
                 {projetos.map((projeto, index) => (
                     <li key={index} className='projeto'>
                         <a href={projeto.link} target="_blank" rel="noreferrer">
-                            <img src={projeto.img} />
+                            <img src={projeto.img}  alt='preview do projeto'/>
                             <FontAwesomeIcon icon={faLink} size="xs"/>
                             <h3>{projeto.nome}</h3>
                             <h4>{projeto.categoria}</h4>

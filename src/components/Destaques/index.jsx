@@ -42,7 +42,7 @@ const Destaques = () => {
                 <ul>
                     {destaques.map((destaque, index) => (
                         <li key={index}>
-                            <img src={destaque.img} />
+                            <img src={destaque.img} alt='preview do projeto'/>
                             <div className='destaque__info'>
                                 <div className='destaque__tit'>
                                     <h3>{destaque.nome}</h3>
