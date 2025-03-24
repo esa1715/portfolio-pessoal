@@ -1,6 +1,7 @@
 import './Destaques.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMobile, faRotateLeft, faLink } from '@fortawesome/free-solid-svg-icons'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Destaques = () => {
     const destaques = [
@@ -42,7 +43,11 @@ const Destaques = () => {
                 <ul>
                     {destaques.map((destaque, index) => (
                         <li key={index}>
-                            <img src={destaque.img} alt='preview do projeto'/>
+                            <LazyLoadImage 
+                                src={destaque.img} 
+                                alt='preview do projeto' 
+                                effect="blur"
+                            />
                             <div className='destaque__info'>
                                 <div className='destaque__tit'>
                                     <h3>{destaque.nome}</h3>
