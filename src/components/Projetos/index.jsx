@@ -4,7 +4,13 @@ import { faMobile, faRotateLeft, faLink } from '@fortawesome/free-solid-svg-icon
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Projetos = () => {
-    const projetos = [ 
+    const projetos = [
+        {
+            img: "/assets/productcard/preview.png",
+            nome: "Product Card Preview",
+            categoria: " - Frontend Mentor Challenge - ",
+            link: "https://product-preview-card-six-pearl.vercel.app/",
+        },
         {
             img: "/assets/profokus/preview.png",
             nome: "Projeto Fokus",
