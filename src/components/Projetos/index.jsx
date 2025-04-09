@@ -6,10 +6,22 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 const Projetos = () => {
     const projetos = [
         {
+            img: "/assets/ida/preview.png",
+            nome: "Projetos Imersão DEV",
+            categoria: " - Imersão DEV da Alura - ",
+            link: "https://imersao-dev-alura-coral.vercel.app/",
+        },
+        {
+            img: "/assets/blogpreviewcard/preview.png",
+            nome: "Blog Preview Card",
+            categoria: " - Frontend Mentor Challenge - ",
+            link: "https://www.frontendmentor.io/solutions/blog-card-preview-react-UhBQC8iliW",
+        },
+        {
             img: "/assets/productcard/preview.png",
             nome: "Product Card Preview",
             categoria: " - Frontend Mentor Challenge - ",
-            link: "https://product-preview-card-six-pearl.vercel.app/",
+            link: "https://www.frontendmentor.io/solutions/react-product-preview-card-dYByqgo74V",
         },
         {
             img: "/assets/profokus/preview.png",
