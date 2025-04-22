@@ -6,6 +6,15 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 const Destaques = () => {
     const destaques = [
         {
+            img: "/assets/spacetourism/preview.png",
+            nome: "Space Tourism Website",
+            categoria: " - Frontend Mentor Challenge - ",
+            descricao: "Desenvolvido como uma Single Page Application (SPA) usando React, o site possui três abas além da home: uma com informações sobre os destinos, outra sobre os membros da equipe e uma terceira para as tecnologias. Este foi um dos projetos que mais me ajudaram a conhecer e fixar conceitos de front-end, omo gerenciamento de estados, roteamento com React Router e componentização.",
+            repositorio: "https://github.com/esa1715/st-fementor",
+            projeto: "https://st-fementor.vercel.app/", 
+        },
+
+        {
             img: "/assets/otreact/preview.png",
             nome: "OptimusTech - React",
             categoria: " - Projeto Próprio - ",
