@@ -6,9 +6,10 @@ import './App.css';
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
+import React from 'react';
 
 function App() {
-  const [isLightTheme, setIsLightTheme] = useState(false);
+  const [isLightTheme, setIsLightTheme] = useState<boolean>(false);
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
@@ -21,7 +22,7 @@ function App() {
     }
   }, []);
 
-  const toggleTheme = (theme) => {
+  const toggleTheme = (theme: 'light' | 'dark') => {
     if (theme === 'light') {
       setIsLightTheme(true);
       document.body.classList.add('light-theme');
@@ -35,15 +36,14 @@ function App() {
 
   return (
     <div className='App'>
-      
-      <Helmet>
+      {/* <Helmet>
         <title>Portfólio de Erik da Silva Alves | Desenvolvedor Front-End</title>
         <meta name="description" content="Confira os projetos mais recentes de Erik da Silva Alves, desenvolvedor front-end especializado em React e design responsivo." />
         <meta name="keywords" content="desenvolvedor front-end, React, projetos web, design responsivo" />
         <meta property="og:title" content="Portfólio de Erik da Silva Alves" />
         <meta property="og:description" content="Confira os projetos mais recentes de Erik da Silva Alves, desenvolvedor front-end especializado em React e design responsivo." />
-        <meta property="og:url" content="https://portfolio-pessoal-alpha-nine.vercel.app/" /> {/* Link do seu site */}
-      </Helmet>
+        <meta property="og:url" content="https://portfolio-pessoal-alpha-nine.vercel.app/" />
+      </Helmet> */}
 
       <section className='tema'>
         <div className="theme-switch">
@@ -59,7 +59,7 @@ function App() {
             style={{color: "#f5fdfd",}} 
             className="icon sun-icon"
             onClick={() => toggleTheme('light')}
-            />
+          />
         </div>
       </section>
 
