@@ -3,8 +3,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMobile, faRotateLeft, faLink } from '@fortawesome/free-solid-svg-icons'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
-const Projetos = () => {
-    const projetos = [
+interface Projeto { 
+    img: string;
+    nome: string;
+    categoria: string;
+    link: string;
+}
+
+
+const Projetos: React.FC = () => {
+    const projetos: Projeto[] = [
         {
             img: "/assets/ida/preview.png",
             nome: "Projetos Imersão DEV",
@@ -28,7 +36,6 @@ const Projetos = () => {
             nome: "Projeto Fokus",
             categoria: " - Curso Alura - ",
             link: "https://projeto-fokus-alura-three.vercel.app/",
-            tags: ["JavaScript"],
         },
 
         {
@@ -36,7 +43,6 @@ const Projetos = () => {
             nome: "Página de Livros",
             categoria: " - Curso Alura - ",
             link: "https://metodos-array-alura.vercel.app/",
-            tags: ["JavaScript"],
         },
 
         {
@@ -44,7 +50,6 @@ const Projetos = () => {
             nome: "Lista de Compras",
             categoria: " - Curso Alura - ",
             link: "https://esa1715.github.io/lista-de-compras-alura/",
-            tags: ["HTML", "CSS", "JavaScript", "React"],
         },
 
         {
@@ -52,7 +57,6 @@ const Projetos = () => {
             nome: "Página de Upload da CodeConnect",
             categoria: " - Curso Alura - ",
             link: "https://esa1715.github.io/pag-upload-code-connect/",
-            tags: ["JavaScript"],
         },
 
         {
@@ -60,7 +64,6 @@ const Projetos = () => {
             nome: "Portfólio Joana",
             categoria: " - Curso Alura - ",
             link: "https://esa1715.github.io/html-css-alura/",
-            tags: ["HTML", "CSS", "JavaScript", "React"],
         },
 
         {
@@ -68,7 +71,6 @@ const Projetos = () => {
             nome: "Página de Perfil do LinkedIn",
             categoria: " - Desafio #7DaysOfCode - ",
             link: "https://esa1715.github.io/pag-perfil-linkedin/",
-            tags: ["HTML", "CSS"],
         },
 
         {
@@ -76,7 +78,6 @@ const Projetos = () => {
             nome: "Página de Vagas da OptimusTech",
             categoria: " - Desafio #7DaysOfCode - ",
             link: "https://esa1715.github.io/pag-vagas-empresa-ficticia/",
-            tags: ["HTML", "CSS"],
         },
     ]
     

@@ -1,14 +1,12 @@
 import { useState } from 'react';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faGear } from '@fortawesome/free-solid-svg-icons'
 import './Navbar.css';
 import Projetos from '../Projetos';
 import Especialidades from '../Especialidades';
 import Proposta from '../Proposta';
 import Destaques from '../Destaques';
 
-const Navbar = () => {
-    const [selecaoAtiva, setSelecaoAtiva] = useState(null);
+const Navbar: React.FC = () => {
+    const [selecaoAtiva, setSelecaoAtiva] = useState<string | null>(null);
 
     return (
         <section className='navbar'>

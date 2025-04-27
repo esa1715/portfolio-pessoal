@@ -1,17 +1,17 @@
-import { useState } from 'react';
+import { useState, ChangeEvent, FormEvent } from 'react';
 import './Proposta.css';
 import emailjs from '@emailjs/browser';
 
 const Proposta = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [image, setImage] = useState('');
-  const [imageError, setImageError] = useState('');
-  const [imagePreview, setImagePreview] = useState('');
+  const [name, setName] = useState<string>('');
+  const [email, setEmail] = useState<string>('');
+  const [message, setMessage] = useState<string>('');
+  const [image, setImage] = useState<string>('');
+  const [imageError, setImageError] = useState<string>('');
+  const [imagePreview, setImagePreview] = useState<string>('');
 
-  function handleImageChange(e) {
-    const file = e.target.files[0];
+  function handleImageChange(e: ChangeEvent<HTMLInputElement>) {
+    const file = e.target.files?.[0];
 
     if (file) {
       if (!file.type.startsWith('image/')) {
@@ -32,14 +32,14 @@ const Proposta = () => {
 
       const reader = new FileReader();
       reader.onloadend = () => {
-        setImage(reader.result.split(',')[1]);
-        setImagePreview(reader.result);
+        setImage(reader.result?.toString().split(',')[1] || '');
+        setImagePreview(reader.result?.toString() || '');
       };
       reader.readAsDataURL(file);
     }
   }
 
-  function sendEmail(e) {
+  function sendEmail(e: FormEvent) {
     e.preventDefault();
 
     if (name === '' || email === '' || message === '') {
@@ -61,14 +61,14 @@ const Proposta = () => {
 
     emailjs.send("service_g0fdcsh", "template_tembsqi", templateParams, "tKfoA_41B4rKrfbf1")
       .then((response) => {
-        alert("E-mail enviado com sucesso!", response.status, response.text);
+        alert(`E-mail enviado com sucesso! Status: ${response.status}, Texto: ${response.text}`);
         setName('');
         setEmail('');
         setMessage('');
         setImage('');
         setImagePreview('');
       }, (err) => {
-        alert("Erro ao enviar o e-mail:", err);
+        alert(`Erro ao enviar o e-mail: ${err}`);
       });
   }
 
