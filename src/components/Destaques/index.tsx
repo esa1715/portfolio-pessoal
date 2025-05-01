@@ -15,6 +15,15 @@ interface Destaque {
 const Destaques: React.FC = () => {
     const destaques: Destaque[] = [
         {
+            img: "/assets/alarado/preview.png",
+            nome: "Homepage Alarado",
+            categoria: " - devChallenges - ",
+            descricao: "Meu primeiro projeto em Angular. A homepage foi desenvolvida como parte do desafio de Frontend da devChallenges. Nela, há interatividade simples ao passar o mouse sobre os botões, além de um switcher para alternar entre os temas claro e escuro",
+            repositorio: "https://github.com/esa1715/angular-alarado",
+            projeto: "https://angular-alarado.vercel.app/", 
+        },
+        
+        {
             img: "/assets/spacetourism/preview.png",
             nome: "Space Tourism Website",
             categoria: " - Frontend Mentor Challenge - ",

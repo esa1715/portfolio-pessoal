@@ -1,4 +1,3 @@
-import { Helmet } from 'react-helmet';
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
@@ -36,15 +35,6 @@ function App() {
 
   return (
     <div className='App'>
-      {/* <Helmet>
-        <title>Portfólio de Erik da Silva Alves | Desenvolvedor Front-End</title>
-        <meta name="description" content="Confira os projetos mais recentes de Erik da Silva Alves, desenvolvedor front-end especializado em React e design responsivo." />
-        <meta name="keywords" content="desenvolvedor front-end, React, projetos web, design responsivo" />
-        <meta property="og:title" content="Portfólio de Erik da Silva Alves" />
-        <meta property="og:description" content="Confira os projetos mais recentes de Erik da Silva Alves, desenvolvedor front-end especializado em React e design responsivo." />
-        <meta property="og:url" content="https://portfolio-pessoal-alpha-nine.vercel.app/" />
-      </Helmet> */}
-
       <section className='tema'>
         <div className="theme-switch">
           <div className={`switch-indicator ${isLightTheme ? 'light' : 'dark'}`} />
