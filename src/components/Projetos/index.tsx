@@ -14,6 +14,12 @@ interface Projeto {
 const Projetos: React.FC = () => {
     const projetos: Projeto[] = [
         {
+            img: "/assets/caraoucoroa/preview.png",
+            nome: "Cara ou Coroa",
+            categoria: " - devChallenges - ",
+            link: "https://caraoucoroa-six.vercel.app/",
+        },
+        {
             img: "/assets/ida/preview.png",
             nome: "Projetos Imersão DEV",
             categoria: " - Imersão DEV da Alura - ",
