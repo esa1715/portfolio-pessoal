@@ -43,6 +43,7 @@
 
 .techtools__content ul li:hover {
     transform: scale(1.25);
+    transition: 0.5s;
     cursor: pointer;
 }
 

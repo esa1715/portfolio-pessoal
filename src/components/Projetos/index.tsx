@@ -14,6 +14,18 @@ interface Projeto {
 const Projetos: React.FC = () => {
     const projetos: Projeto[] = [
         {
+            img: "/assets/newshp/preview.png",
+            nome: "News Homepage",
+            categoria: " - Frontend Mentor Challenge - ",
+            link: "https://news-homepage-fem-rose.vercel.app/",
+        }, 
+        {
+            img: "/assets/alarado/preview.png",
+            nome: "Homepage Alarado",
+            categoria: " - devChallenges - ",
+            link: "https://angular-alarado.vercel.app/",
+        },
+        {
             img: "/assets/caraoucoroa/preview.png",
             nome: "Cara ou Coroa",
             categoria: " - devChallenges - ",
