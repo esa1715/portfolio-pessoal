@@ -19,7 +19,7 @@ const Destaques: React.FC = () => {
             nome: 'Easybank Landing Page',
             categoria: " - Frontend Mentor Challenge - ",
             descricao: "Este projeto me ajudou a consolidar conhecimentos como responsividade e uso de media queries, posicionamento de imagens com position: absolute, customização de cores em textos e ícones SVG. Também foi nesse projeto, comecei a usar commits mais estruturados, seguindo o padrão feat, fix, etc., o que me ajudou a entender melhor a importância de um bom histórico de alterações no Git.",
-            repositorio: "https://digital-bank-lp-fem.vercel.app/",
+            repositorio: "https://github.com/esa1715/digital-bank-lp-fem",
             projeto: "https://digital-bank-lp-fem.vercel.app/", 
         },
         {
