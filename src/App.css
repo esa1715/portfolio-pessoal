@@ -1,11 +1,11 @@
 :root {
-  --bg-color: #04080d;
+  --bg-color: #1b1c1e;
   --text-color: #fff378;
   --ulis-color: #fff378;
 }
 
 .light-theme {
-  --bg-color: #f5fdfd;
+  --bg-color: #f6f6f6;
   --text-color: #051962;
   --ulis-color: #051962;
 }
