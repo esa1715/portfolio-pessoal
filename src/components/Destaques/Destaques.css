@@ -84,6 +84,9 @@
 
 .destaque__badges {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .destaque__links {

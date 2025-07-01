@@ -71,7 +71,7 @@ const Destaques: React.FC = () => {
             categoria: " - Curso Alura - ",
             descricao: 'Projeto criado do zero durante o "Curso de React: Desenvolvendo com JavaScript" da Alura. A aplicação utiliza React e JavaScript para possibilitar a criação dinâmica de cards para colaboradores, com personalização de acordo com o time do colaborador.',
             badges: [
-                'https://img.shields.io/badge/React%20Hook%20Form-%23EC5990.svg?style=for-the-badge&logo=reacthookform&logoColor=white'
+                'https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB'
             ],
             repositorio: "https://github.com/esa1715/pag-organo-react",
             projeto: "https://pag-organo-react.vercel.app/",
