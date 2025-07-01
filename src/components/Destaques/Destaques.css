@@ -45,15 +45,15 @@
     width: 100%;
     height: auto;
     align-items: center;
-    border: 1px solid var(--text-color);
+    border: 3px solid var(--text-color);
     margin: 1.25%;
-    padding: 1.25%;
+    border-radius: 0.75rem
 }
 
-#destaques ul li img {
+.preview {
     width: 100%;
-    padding: 1.25%;
-    border: 1px solid var(--text-color);
+    border-bottom: 3px solid var(--text-color);
+    border-radius: 0.75rem 0.75rem 0 0;
 }
 
 .destaque__info {
@@ -80,6 +80,10 @@
 .destaque__desc {
     display: flex;
     text-align: center;
+}
+
+.destaque__badges {
+    display: flex;
 }
 
 .destaque__links {
