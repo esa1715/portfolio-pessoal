@@ -6,7 +6,7 @@ import Proposta from '../Proposta';
 import Destaques from '../Destaques';
 
 const Navbar: React.FC = () => {
-    const [selecaoAtiva, setSelecaoAtiva] = useState<string | null>(null);
+    const [selecaoAtiva, setSelecaoAtiva] = useState<string>('destaques');
 
     return (
         <section className='navbar'>

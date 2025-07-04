@@ -1,6 +1,7 @@
 import './Destaques.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMobile, faRotateLeft, faLink } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 interface Destaque {
@@ -95,8 +96,6 @@ const Destaques: React.FC = () => {
     <section id='destaques'>
         <div className='destaques__tit'>
             <h2>PROJETOS EM DESTAQUE</h2>
-            <FontAwesomeIcon icon={faMobile} />
-            <FontAwesomeIcon icon={faRotateLeft} />
         </div>
         <ul>
             {destaques.map((destaque, index) => (
@@ -107,30 +106,51 @@ const Destaques: React.FC = () => {
                     effect="blur"
                     className='preview'
                 />
-                <div className='destaque__info'>
+                
                     <div className='destaque__tit'>
                         <h3>{destaque.nome}</h3>
                         <p>{destaque.categoria}</p>
                     </div>
-                    <p className='destaque__desc'>{destaque.descricao}</p>
+                    <div className='destaque__info'>
+                    <div className='destaque__desc'>
+                    <h3>Sobre o Projeto</h3>
+                    <p>{destaque.descricao}</p>
+                    </div>
+                    <div className='more-info'>
+                    <div className="featured-project-tools">
                     <h3>Tecnologias Utilizadas</h3>
-                    <div className="destaque__badges">
+                    <div className='tools-badges'>
                         {destaque.badges.map((badge, i) => (
                             <img key={i} src={badge} alt="badge de tecnologia" />
                         ))}
                     </div>
-                    <h3>Links</h3>
-                    <div className='destaque__links'>
-                        <a href={destaque.repositorio} target="_blank" rel="noreferrer">
-                            <FontAwesomeIcon icon={faLink} size="xs" />
-                            <span>Repositório</span>
-                        </a> 
                     </div>
                     <div className='destaque__links'>
-                        <a href={destaque.projeto} target="_blank" rel="noreferrer">
+                    <h3>Links</h3>
+                    <div className='featured-project-links'>
+                        <div className='fpl-content'>
+                            <a href={destaque.repositorio} target="_blank" rel="noreferrer" className="fp-github-link">
+                                <FontAwesomeIcon icon={faGithub} className='fp-gh-icon'/>
+                                Repositório
+                            </a>
+                            
+                            <a href={destaque.projeto} target="_blank" rel="noreferrer" className="fp-link">    
+                                <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                                Ver Projeto
+                            </a>
+
+                        
+
+
+
+                        </div>
+                        {/* <a href={destaque.projeto} target="_blank" rel="noreferrer">
                             <FontAwesomeIcon icon={faLink} size="xs" />
                             <span>Projeto</span>
-                        </a>
+                        </a>  */}
+                        </div>
+                    </div>
+                    
                     </div>
                 </div>
             </li>
